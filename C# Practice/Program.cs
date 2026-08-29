@@ -9,6 +9,7 @@ using C__Practice.Lists;
 using C__Practice.Arrays;
 using C__Practice.Searches;
 using C__Practice.Sorts;
+using C__Practice.OOPS.Bank_Account;
 
 namespace C__Practice
 {
@@ -266,21 +267,29 @@ namespace C__Practice
 
             //CustomList
 
-            CustomList<int> myList = new CustomList<int>();
-            myList.Add(7);
-            myList.Add(6);
-            myList.Add(5);
-            myList.Add(4);
-            myList.Add(3);
-            myList.Insert(3, 9);
-            myList.RemoveAt(0);
+            //CustomList<int> myList = new CustomList<int>();
+            //myList.Add(7);
+            //myList.Add(6);
+            //myList.Add(5);
+            //myList.Add(4);
+            //myList.Add(3);
+            //myList.Insert(3, 9);
+            //myList.RemoveAt(0);
 
-            //myList.display();
-            for(int i = 0; i<myList.Count; i++)
-            {
-                Console.Write(myList[i] + ", ");
-            }
-            //Console.WriteLine(myList.Count);
+            //for(int i = 0; i<myList.Count; i++)
+            //{
+            //    Console.Write(myList[i] + ", ");
+            //}
+
+            SavingAccount user1 = new SavingAccount();
+            user1.Deposit(4000);
+            user1.Withdraw(3500);
+            user1.CheckBalance();
+
+            CurrentAccount user2 = new CurrentAccount();
+            user2.Deposit(2000);
+            user2.Withdraw(3000);
+            user2.CheckBalance();
 
             Console.ReadKey();
         }
