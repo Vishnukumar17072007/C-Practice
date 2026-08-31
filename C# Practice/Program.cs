@@ -1,16 +1,4 @@
-﻿using System;
-
-using C__Practice.Pattern;
-using C__Practice.Sort;
-using C__Practice.Loops;
-using C__Practice.Basics;
-using C__Practice.Array;
-using C__Practice.Lists;
-using C__Practice.Arrays;
-using C__Practice.Searches;
-using C__Practice.Sorts;
-using C__Practice.OOPS.Bank_Account;
-using C__Practice.OOPS;
+﻿using C__Practice.Stack_and_Queue;
 
 namespace C__Practice
 {
@@ -296,17 +284,46 @@ namespace C__Practice
 
             //Shapes OOP's
 
-            Circle shape1 = new Circle();
-            double result1 = shape1.Area();
-            Console.WriteLine("Area of circle : " +  result1);
+            //Circle shape1 = new Circle();
+            //double result1 = shape1.Area();
+            //Console.WriteLine("Area of circle : " +  result1);
 
-            Rectangle shape2 = new Rectangle();
-            double result2 = shape2.Area();
-            Console.WriteLine("Area of Rectangle : " + result2);
+            //Rectangle shape2 = new Rectangle();
+            //double result2 = shape2.Area();
+            //Console.WriteLine("Area of Rectangle : " + result2);
 
-            Triangle shape3 = new Triangle();
-            double result3 = shape3.Area();
-            Console.WriteLine("Area of Triangle : " + result3);
+            //Triangle shape3 = new Triangle();
+            //double result3 = shape3.Area();
+            //Console.WriteLine("Area of Triangle : " + result3);
+
+            //Stack
+
+            //GStack<int> nums = new GStack<int>();
+            //nums.Push(1);
+            //nums.Push(2);
+            //nums.Push(3);
+            //nums.Push(4);
+            //nums.Push(5);
+            //nums.Push(6);
+            //int removedNum = nums.Pop();
+            //int peekedElement = nums.Peek();
+            //nums.Display();
+            //Console.WriteLine("\nRemoved item = " + removedNum);
+            //Console.WriteLine("Peeked Element = " + peekedElement);
+
+            //Queue
+
+            GQueue<int> nums = new GQueue<int>();
+            nums.Push(1);
+            nums.Push(2);
+            nums.Push(3);
+            nums.Push(4);
+            nums.Push(5);
+            int removedNum = nums.Pop();
+            int peekedNum = nums.Peek();
+            Console.WriteLine("Removed Element = " + removedNum);
+            Console.WriteLine("Peeked Element = " + peekedNum);
+            nums.Display();
 
             Console.ReadKey();
         }
