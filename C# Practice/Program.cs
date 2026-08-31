@@ -10,6 +10,7 @@ using C__Practice.Arrays;
 using C__Practice.Searches;
 using C__Practice.Sorts;
 using C__Practice.OOPS.Bank_Account;
+using C__Practice.OOPS;
 
 namespace C__Practice
 {
@@ -281,15 +282,31 @@ namespace C__Practice
             //    Console.Write(myList[i] + ", ");
             //}
 
-            SavingAccount user1 = new SavingAccount();
-            user1.Deposit(4000);
-            user1.Withdraw(3500);
-            user1.CheckBalance();
+            //Bank Account OOP's
 
-            CurrentAccount user2 = new CurrentAccount();
-            user2.Deposit(2000);
-            user2.Withdraw(3000);
-            user2.CheckBalance();
+            //SavingAccount user1 = new SavingAccount();
+            //user1.Deposit(4000);
+            //user1.Withdraw(3500);
+            //user1.CheckBalance();
+
+            //CurrentAccount user2 = new CurrentAccount();
+            //user2.Deposit(2000);
+            //user2.Withdraw(3000);
+            //user2.CheckBalance();
+
+            //Shapes OOP's
+
+            Circle shape1 = new Circle();
+            double result1 = shape1.Area();
+            Console.WriteLine("Area of circle : " +  result1);
+
+            Rectangle shape2 = new Rectangle();
+            double result2 = shape2.Area();
+            Console.WriteLine("Area of Rectangle : " + result2);
+
+            Triangle shape3 = new Triangle();
+            double result3 = shape3.Area();
+            Console.WriteLine("Area of Triangle : " + result3);
 
             Console.ReadKey();
         }
