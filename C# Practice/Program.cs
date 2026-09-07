@@ -1,4 +1,5 @@
-﻿using C__Practice.Stack_and_Queue;
+﻿using C__Practice.OOPS;
+using C__Practice.Stack_and_Queue;
 
 namespace C__Practice
 {
@@ -313,17 +314,27 @@ namespace C__Practice
 
             //Queue
 
-            GQueue<int> nums = new GQueue<int>();
-            nums.Push(1);
-            nums.Push(2);
-            nums.Push(3);
-            nums.Push(4);
-            nums.Push(5);
-            int removedNum = nums.Pop();
-            int peekedNum = nums.Peek();
-            Console.WriteLine("Removed Element = " + removedNum);
-            Console.WriteLine("Peeked Element = " + peekedNum);
-            nums.Display();
+            //GQueue<int> nums = new GQueue<int>();
+            //nums.Push(1);
+            //nums.Push(2);
+            //nums.Push(3);
+            //nums.Push(4);
+            //nums.Push(5);
+            //int removedNum = nums.Pop();
+            //int peekedNum = nums.Peek();
+            //Console.WriteLine("Removed Element = " + removedNum);
+            //Console.WriteLine("Peeked Element = " + peekedNum);
+            //nums.Display();
+
+            //Abstract Example
+
+            List<AbstractEg> emps = new List<AbstractEg> { new Employee("vishnu"), new HR("siva"), new SoftwareEngineer("muthu") };
+            for(int i = 0; i<emps.Count; i++)
+            {
+                emps[i].DispName();
+                int salary = emps[i].DispSalary();
+                Console.WriteLine("Salary: " + salary);
+            }
 
             Console.ReadKey();
         }
