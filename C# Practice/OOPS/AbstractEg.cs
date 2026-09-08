@@ -9,7 +9,7 @@ namespace C__Practice.OOPS
         public string Name;
         public AbstractEg(string name) => Name = name;
 
-        public void DispName() => Console.WriteLine("Name: "+Name);
+        public void DispName() => Console.WriteLine("Name: "+Name); //cannot be overrided
         public abstract int DispSalary();
     }
     class Employee : AbstractEg

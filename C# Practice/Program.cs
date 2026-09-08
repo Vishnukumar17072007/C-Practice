@@ -328,12 +328,21 @@ namespace C__Practice
 
             //Abstract Example
 
-            List<AbstractEg> emps = new List<AbstractEg> { new Employee("vishnu"), new HR("siva"), new SoftwareEngineer("muthu") };
-            for(int i = 0; i<emps.Count; i++)
+            //List<AbstractEg> emps = new List<AbstractEg> { new Employee("vishnu"), new HR("siva"), new SoftwareEngineer("muthu") };
+            //for(int i = 0; i<emps.Count; i++)
+            //{
+            //    emps[i].DispName();
+            //    int salary = emps[i].DispSalary();
+            //    Console.WriteLine("Salary: " + salary);
+            //}
+
+            //Interface Example
+
+            List<IInterfaceEg> Animals = new List<IInterfaceEg> { new Dog("Veera"), new Lion("Soora") };
+            foreach(IInterfaceEg animal in Animals)
             {
-                emps[i].DispName();
-                int salary = emps[i].DispSalary();
-                Console.WriteLine("Salary: " + salary);
+                animal.Details();
+                animal.Sound();
             }
 
             Console.ReadKey();
