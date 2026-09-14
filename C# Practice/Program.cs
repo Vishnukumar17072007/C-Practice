@@ -1,4 +1,5 @@
-﻿using C__Practice.OOPS;
+﻿using C__Practice.Dictionaries;
+using C__Practice.OOPS;
 using C__Practice.Stack_and_Queue;
 
 namespace C__Practice
@@ -338,12 +339,30 @@ namespace C__Practice
 
             //Interface Example
 
-            List<IInterfaceEg> Animals = new List<IInterfaceEg> { new Dog("Veera"), new Lion("Soora") };
-            foreach(IInterfaceEg animal in Animals)
+            //List<IInterfaceEg> Animals = new List<IInterfaceEg> { new Dog("Veera"), new Lion("Soora") };
+            //foreach(IInterfaceEg animal in Animals)
+            //{
+            //    animal.Details();
+            //    animal.Sound();
+            //}
+
+            //Employee Name and Roles creating using Dictionary
+            EmpAndRole emps = new EmpAndRole();
+            emps.AddOrModifyEmpAndRole("Vishnu", "CEO");
+            emps.AddOrModifyEmpAndRole("Tharmesh", "Genaral Manager");
+            emps.AddOrModifyEmpAndRole("Sridhar", "Manager");
+            emps.AddOrModifyEmpAndRole("Ponseka", "Team Leader");
+            emps.AddOrModifyEmpAndRole("Ganesan", "Software Developer");
+            emps.RemoveEmpAndRoleByKey("Vishnu");
+            if (emps.isContainsKey("Tharmesh"))
             {
-                animal.Details();
-                animal.Sound();
+                Console.WriteLine("Employee is present");
             }
+            else
+            {
+                Console.WriteLine("Employee is not present");
+            }
+            emps.ShowAllEmpAndRoles();
 
             Console.ReadKey();
         }
