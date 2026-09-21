@@ -1,4 +1,5 @@
 ﻿using C__Practice.Dictionaries;
+using C__Practice.IComparableAndIComparerGeneric;
 using C__Practice.OOPS;
 using C__Practice.Stack_and_Queue;
 
@@ -347,22 +348,53 @@ namespace C__Practice
             //}
 
             //Employee Name and Roles creating using Dictionary
-            EmpAndRole emps = new EmpAndRole();
-            emps.AddOrModifyEmpAndRole("Vishnu", "CEO");
-            emps.AddOrModifyEmpAndRole("Tharmesh", "Genaral Manager");
-            emps.AddOrModifyEmpAndRole("Sridhar", "Manager");
-            emps.AddOrModifyEmpAndRole("Ponseka", "Team Leader");
-            emps.AddOrModifyEmpAndRole("Ganesan", "Software Developer");
-            emps.RemoveEmpAndRoleByKey("Vishnu");
-            if (emps.isContainsKey("Tharmesh"))
+
+            //EmpAndRole emps = new EmpAndRole();
+            //emps.AddOrModifyEmpAndRole("Vishnu", "CEO");
+            //emps.AddOrModifyEmpAndRole("Tharmesh", "Genaral Manager");
+            //emps.AddOrModifyEmpAndRole("Sridhar", "Manager");
+            //emps.AddOrModifyEmpAndRole("Ponseka", "Team Leader");
+            //emps.AddOrModifyEmpAndRole("Ganesan", "Software Developer");
+            //emps.RemoveEmpAndRoleByKey("Vishnu");
+            //if (emps.isContainsKey("Tharmesh"))
+            //{
+            //    Console.WriteLine("Employee is present");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Employee is not present");
+            //}
+            //emps.ShowAllEmpAndRoles();
+
+            //IComparable And IComparer Generic
+            List<Fruits> fruits = new List<Fruits>
             {
-                Console.WriteLine("Employee is present");
-            }
-            else
+                new Fruits("Apple", 200),
+                new Fruits("Orange", 150),
+                new Fruits("Grapes", 120),
+                new Fruits("Watermelon", 220),
+                new Fruits("Tender coconut", 80)
+            };
+
+            Console.WriteLine("Before sorting");
+            foreach(Fruits fruit in fruits)
             {
-                Console.WriteLine("Employee is not present");
+                Console.WriteLine($"Name: {fruit.Name}, Price: {fruit.Price}");
             }
-            emps.ShowAllEmpAndRoles();
+
+            fruits.Sort();
+            Console.WriteLine("After sorting");
+            foreach(Fruits fruit in fruits)
+            {
+                Console.WriteLine($"Name: {fruit.Name}, Price: {fruit.Price}");
+            }
+
+            fruits.Sort(new NameSort());
+            Console.WriteLine("After Sorted by Name");
+            foreach(Fruits fruit in fruits)
+            {
+                Console.WriteLine($"Name: {fruit.Name}, Price: {fruit.Price}");
+            }
 
             Console.ReadKey();
         }
