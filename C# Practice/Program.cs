@@ -1,5 +1,6 @@
 ﻿using C__Practice.Dictionaries;
 using C__Practice.IComparableAndIComparerGeneric;
+using C__Practice.IEnumeratorAndIEnumerable;
 using C__Practice.OOPS;
 using C__Practice.Stack_and_Queue;
 
@@ -367,33 +368,41 @@ namespace C__Practice
             //emps.ShowAllEmpAndRoles();
 
             //IComparable And IComparer Generic
-            List<Fruits> fruits = new List<Fruits>
-            {
-                new Fruits("Apple", 200),
-                new Fruits("Orange", 150),
-                new Fruits("Grapes", 120),
-                new Fruits("Watermelon", 220),
-                new Fruits("Tender coconut", 80)
-            };
 
-            Console.WriteLine("Before sorting");
-            foreach(Fruits fruit in fruits)
-            {
-                Console.WriteLine($"Name: {fruit.Name}, Price: {fruit.Price}");
-            }
+            //List<Fruits> fruits = new List<Fruits>
+            //{
+            //    new Fruits("Apple", 200),
+            //    new Fruits("Orange", 150),
+            //    new Fruits("Grapes", 120),
+            //    new Fruits("Watermelon", 220),
+            //    new Fruits("Tender coconut", 80)
+            //};
 
-            fruits.Sort();
-            Console.WriteLine("After sorting");
-            foreach(Fruits fruit in fruits)
-            {
-                Console.WriteLine($"Name: {fruit.Name}, Price: {fruit.Price}");
-            }
+            //Console.WriteLine("Before sorting");
+            //foreach(Fruits fruit in fruits)
+            //{
+            //    Console.WriteLine($"Name: {fruit.Name}, Price: {fruit.Price}");
+            //}
 
-            fruits.Sort(new NameSort());
-            Console.WriteLine("After Sorted by Name");
-            foreach(Fruits fruit in fruits)
+            //fruits.Sort();
+            //Console.WriteLine("After sorting");
+            //foreach(Fruits fruit in fruits)
+            //{
+            //    Console.WriteLine($"Name: {fruit.Name}, Price: {fruit.Price}");
+            //}
+
+            //fruits.Sort(new NameSort());
+            //Console.WriteLine("After Sorted by Name");
+            //foreach(Fruits fruit in fruits)
+            //{
+            //    Console.WriteLine($"Name: {fruit.Name}, Price: {fruit.Price}");
+            //}
+
+            //Generic IEnumerable and IEnumerator
+            Cars cars = new Cars();
+            foreach (var car in cars)
             {
-                Console.WriteLine($"Name: {fruit.Name}, Price: {fruit.Price}");
+                Console.Write(car + ", ");
             }
 
             Console.ReadKey();
