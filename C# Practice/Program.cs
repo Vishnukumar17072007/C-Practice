@@ -1,5 +1,7 @@
-﻿using C__Practice.Dictionaries;
+﻿using C__Practice.ArrayListPractice;
+using C__Practice.Dictionaries;
 using C__Practice.ExceptionHandling;
+using C__Practice.HashTable;
 using C__Practice.IComparableAndIComparerGeneric;
 using C__Practice.IEnumeratorAndIEnumerable;
 using C__Practice.OOPS;
@@ -414,20 +416,12 @@ namespace C__Practice
             //game.Start(inputWord);
 
             //Build-in arrayList
-            ArrayList arr = new ArrayList();
-            Console.Write("Enter S.NO: ");
-            int no = int.Parse(Console.ReadLine());
-            Console.Write("Enter your Name: ");
-            string name = Console.ReadLine();
-            Console.Write("Enter your Mark: ");
-            double mark = double.Parse(Console.ReadLine());
-            arr.Add(no);
-            arr.Add(name);
-            arr.Add(mark);
-            foreach (var value in arr)
-            {
-                Console.WriteLine(value);
-            }
+            ArrayListDetails arr = new ArrayListDetails();
+            arr.run();
+
+            //HashTable
+            EmployeeData emp = new EmployeeData();
+            emp.run();
 
             Console.ReadKey();
         }
