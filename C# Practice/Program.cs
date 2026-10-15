@@ -1,4 +1,5 @@
 ﻿using C__Practice.Dictionaries;
+using C__Practice.ExceptionHandling;
 using C__Practice.IComparableAndIComparerGeneric;
 using C__Practice.IEnumeratorAndIEnumerable;
 using C__Practice.OOPS;
@@ -399,11 +400,17 @@ namespace C__Practice
             //}
 
             //Generic IEnumerable and IEnumerator
-            Cars cars = new Cars();
-            foreach (var car in cars)
-            {
-                Console.Write(car + ", ");
-            }
+            //Cars cars = new Cars();
+            //foreach (var car in cars)
+            //{
+            //    Console.Write(car + ", ");
+            //}
+
+            //don't say the word game
+            WordGame game = new();
+            Console.Write("Input a word: ");
+            string inputWord = Console.ReadLine();
+            game.Start(inputWord);
 
             Console.ReadKey();
         }
