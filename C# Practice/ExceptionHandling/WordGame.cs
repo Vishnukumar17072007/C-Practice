@@ -16,19 +16,14 @@ namespace C__Practice.ExceptionHandling
                 {
                     case "hi":
                         throw new Exception("Don't say it again!!");
-                        break;
                     case "hello":
                         throw new Exception("Don't say it again!!");
-                        break;
                     case "hey":
                         throw new Exception("Don't say it again!!");
-                        break;
                     case "what's up":
                         throw new Exception("Don't say it again!!");
-                        break;
                     case "mm":
                         throw new Exception("Don't say it again!!");
-                        break;
                     default:
                         Console.WriteLine("You just won!");
                         break;

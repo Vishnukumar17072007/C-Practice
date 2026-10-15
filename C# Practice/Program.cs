@@ -4,6 +4,7 @@ using C__Practice.IComparableAndIComparerGeneric;
 using C__Practice.IEnumeratorAndIEnumerable;
 using C__Practice.OOPS;
 using C__Practice.Stack_and_Queue;
+using System.Collections;
 
 namespace C__Practice
 {
@@ -406,11 +407,27 @@ namespace C__Practice
             //    Console.Write(car + ", ");
             //}
 
-            //don't say the word game
-            WordGame game = new();
-            Console.Write("Input a word: ");
-            string inputWord = Console.ReadLine();
-            game.Start(inputWord);
+            //word game - don't say the cursed words
+            //WordGame game = new();
+            //Console.Write("Input a word: ");
+            //string inputWord = Console.ReadLine();
+            //game.Start(inputWord);
+
+            //Build-in arrayList
+            ArrayList arr = new ArrayList();
+            Console.Write("Enter S.NO: ");
+            int no = int.Parse(Console.ReadLine());
+            Console.Write("Enter your Name: ");
+            string name = Console.ReadLine();
+            Console.Write("Enter your Mark: ");
+            double mark = double.Parse(Console.ReadLine());
+            arr.Add(no);
+            arr.Add(name);
+            arr.Add(mark);
+            foreach (var value in arr)
+            {
+                Console.WriteLine(value);
+            }
 
             Console.ReadKey();
         }
