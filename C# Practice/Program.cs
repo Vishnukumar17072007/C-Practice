@@ -434,14 +434,22 @@ namespace C__Practice
             //data.run();
 
             //Stack Collections - ToDoList
-            ToDoList tasks = new();
-            Console.Write("Add task 1: ");
-            tasks.create(Console.ReadLine());
-            Console.Write("Add task 2: ");
-            tasks.create(Console.ReadLine());
-            Console.Write("Add task 3: ");
-            tasks.create(Console.ReadLine());
-            tasks.DisplayAllTask();
+            //ToDoList tasks = new();
+            //Console.Write("Add task 1: ");
+            //tasks.create(Console.ReadLine());
+            //Console.Write("Add task 2: ");
+            //tasks.create(Console.ReadLine());
+            //Console.Write("Add task 3: ");
+            //tasks.create(Console.ReadLine());
+            //tasks.DisplayAllTask();
+
+            //Queue Collections - RationShopQueue
+            RationShopQueue queue = new();
+            queue.addPerson();
+            queue.addPerson();
+            queue.addPerson();
+            queue.addPerson();
+            queue.clearQueue();
 
             Console.ReadKey();
         }
