@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace C__Practice.Stack_and_Queue
+namespace C__Practice.QueuePractice
 {
     class GQueue<T>
     {

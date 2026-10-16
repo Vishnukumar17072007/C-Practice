@@ -6,7 +6,8 @@ using C__Practice.IComparableAndIComparerGeneric;
 using C__Practice.IEnumeratorAndIEnumerable;
 using C__Practice.OOPS;
 using C__Practice.SortedListPractice;
-using C__Practice.Stack_and_Queue;
+using C__Practice.QueuePractice;
+using C__Practice.StackPractice;
 using System.Collections;
 
 namespace C__Practice
@@ -429,8 +430,18 @@ namespace C__Practice
             //data.run();
 
             //Dictionary Collection - Personal Details
-            PersonalDetails data = new();
-            data.run();
+            //PersonalDetails data = new();
+            //data.run();
+
+            //Stack Collections - ToDoList
+            ToDoList tasks = new();
+            Console.Write("Add task 1: ");
+            tasks.create(Console.ReadLine());
+            Console.Write("Add task 2: ");
+            tasks.create(Console.ReadLine());
+            Console.Write("Add task 3: ");
+            tasks.create(Console.ReadLine());
+            tasks.DisplayAllTask();
 
             Console.ReadKey();
         }
