@@ -5,6 +5,7 @@ using C__Practice.HashTable;
 using C__Practice.IComparableAndIComparerGeneric;
 using C__Practice.IEnumeratorAndIEnumerable;
 using C__Practice.OOPS;
+using C__Practice.SortedListPractice;
 using C__Practice.Stack_and_Queue;
 using System.Collections;
 
@@ -416,12 +417,16 @@ namespace C__Practice
             //game.Start(inputWord);
 
             //Build-in arrayList
-            ArrayListDetails arr = new ArrayListDetails();
-            arr.run();
+            //ArrayListDetails arr = new();
+            //arr.run();
 
-            //HashTable
-            EmployeeData emp = new EmployeeData();
-            emp.run();
+            //Build-in HashTable
+            //EmployeeData data = new();
+            //data.run();
+
+            //Build-in SortedList
+            sortedEmployeeData data = new();
+            data.run();
 
             Console.ReadKey();
         }
