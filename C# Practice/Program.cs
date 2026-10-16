@@ -425,7 +425,11 @@ namespace C__Practice
             //data.run();
 
             //Build-in SortedList
-            sortedEmployeeData data = new();
+            //sortedEmployeeData data = new();
+            //data.run();
+
+            //Dictionary Collection - Personal Details
+            PersonalDetails data = new();
             data.run();
 
             Console.ReadKey();
