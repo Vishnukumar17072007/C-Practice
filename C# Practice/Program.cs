@@ -9,6 +9,7 @@ using C__Practice.SortedListPractice;
 using C__Practice.QueuePractice;
 using C__Practice.StackPractice;
 using System.Collections;
+using C__Practice.InterfacePractice;
 
 namespace C__Practice
 {
@@ -444,12 +445,22 @@ namespace C__Practice
             //tasks.DisplayAllTask();
 
             //Queue Collections - RationShopQueue
-            RationShopQueue queue = new();
-            queue.addPerson();
-            queue.addPerson();
-            queue.addPerson();
-            queue.addPerson();
-            queue.clearQueue();
+            //RationShopQueue queue = new();
+            //queue.addPerson();
+            //queue.addPerson();
+            //queue.addPerson();
+            //queue.addPerson();
+            //queue.clearQueue();
+
+            //Iterface - Car assembling program
+            CarAssembling car = new();
+            car.body();
+            car.interior();
+            car.sideDoors();
+            car.windShieldGlasses();
+            car.exterior();
+            car.wheels();
+            Console.WriteLine("Car Assembled successfully.");
 
             Console.ReadKey();
         }
