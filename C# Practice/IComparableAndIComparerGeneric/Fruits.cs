@@ -20,12 +20,4 @@ namespace C__Practice.IComparableAndIComparerGeneric
             return this.Price.CompareTo(other.Price);
         }
     }
-
-    public class NameSort : IComparer<Fruits>
-    {
-        public int Compare(Fruits a, Fruits b)
-        {
-            return a.Name.CompareTo(b.Name);
-        }
-    }
 }

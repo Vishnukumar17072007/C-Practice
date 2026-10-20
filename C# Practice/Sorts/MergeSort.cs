@@ -5,7 +5,7 @@ namespace C__Practice.Sort
 {
     class MergeSort
     {
-        void arrayTransfer(int[] ReplacingArray, int[] ArrayToReplace, int left)
+        void ArrayTransfer(int[] ReplacingArray, int[] ArrayToReplace, int left)
         {
             for(int i = 0; i<ReplacingArray.Length; i++)
             {
@@ -50,7 +50,7 @@ namespace C__Practice.Sort
                 k++;
             }
 
-            arrayTransfer(temp, arr, left);
+            ArrayTransfer(temp, arr, left);
         }
         
         public void Merge_Sort(int[] arr, int left, int right)

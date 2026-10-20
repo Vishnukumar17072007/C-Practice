@@ -2,18 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace C__Practice.InterfacePractice
+namespace C__Practice.InterfacePractice.CarAssemblingProgram
 {
-    public interface CarBluerint
-    {
-        void body();
-        void interior();
-        void sideDoors();
-        void windShieldGlasses();
-        void exterior();
-        void wheels();
-    }
-    class CarAssembling : CarBluerint
+    
+    class CarAssembling : ICarBluePrint
     {
         public void body()
         {
@@ -21,7 +13,7 @@ namespace C__Practice.InterfacePractice
         }
         public void interior()
         {
-            Console.WriteLine("Interior wrok done.");
+            Console.WriteLine("Interior work done.");
         }
         public void sideDoors()
         {
@@ -37,7 +29,7 @@ namespace C__Practice.InterfacePractice
         }
         public void wheels()
         {
-            Console.WriteLine("Four wheels fited.");
+            Console.WriteLine("Four wheels fitted.");
         }
     }
 }

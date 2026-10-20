@@ -4,7 +4,7 @@ using C__Practice.ExceptionHandling;
 using C__Practice.HashTable;
 using C__Practice.IComparableAndIComparerGeneric;
 using C__Practice.IEnumeratorAndIEnumerable;
-using C__Practice.InterfacePractice;
+using C__Practice.InterfacePractice.CarAssemblingProgram;
 using C__Practice.OOPS;
 using C__Practice.propertiesPractice;
 using C__Practice.QueuePractice;
@@ -455,7 +455,7 @@ namespace C__Practice
             //queue.clearQueue();
 
             //Iterface - Car assembling program
-            //CarAssembling car = new();
+            //ICarBluePrint car = new CarAssembling();
             //car.body();
             //car.interior();
             //car.sideDoors();
@@ -465,13 +465,12 @@ namespace C__Practice
             //Console.WriteLine("Car Assembled successfully.");
 
             //Properties - A dataset for a person have been created
-            DataProperties data = new();
-            data.Name = "Vishnu";
-            data.Email = "vk2579789@gmail.com";
-            data.Phone = 9043369457;
-            data.Age = 19;
-
-            data.Display();
+            //DataProperties data = new();
+            //data.Name = "Vishnu";
+            //data.Email = "vk2579789@gmail.com";
+            //data.Phone = 9043369457;
+            //data.Age = 19;
+            //data.Display();
 
 
             Console.ReadKey();
