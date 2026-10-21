@@ -5,6 +5,7 @@ using C__Practice.HashTable;
 using C__Practice.IComparableAndIComparerGeneric;
 using C__Practice.IEnumeratorAndIEnumerable;
 using C__Practice.InterfacePractice.CarAssemblingProgram;
+using C__Practice.OOPs;
 using C__Practice.OOPS;
 using C__Practice.propertiesPractice;
 using C__Practice.QueuePractice;
@@ -454,7 +455,7 @@ namespace C__Practice
             //queue.addPerson();
             //queue.clearQueue();
 
-            //Iterface - Car assembling program
+            //Interface - Car assembling program
             //ICarBluePrint car = new CarAssembling();
             //car.body();
             //car.interior();
@@ -472,6 +473,17 @@ namespace C__Practice
             //data.Age = 19;
             //data.Display();
 
+            //Single inheritance
+            Car ToyotaSupra = new Car("Toyota", "Supra", "Coupe", 12000, "V12", 384, 2);
+            ToyotaSupra.CarDetails();
+
+            //hierarchical inheritance
+            Showroom vehiclefield = new Showroom();
+            vehiclefield.AddVehicle(new Car("Toyota", "Supra", "Coupe", 12000, "V12", 384, 2));
+            vehiclefield.AddVehicle(new Car("Nissan", "Skyline R34", "Coupe", 13000, "V12", 404, 2));
+            vehiclefield.AddVehicle(new Bike("Honda", "Shine", "normal bike", 10000, "3 Stroke", 88, 2));
+            vehiclefield.DisplayCars();
+            vehiclefield.DisplayBike();
 
             Console.ReadKey();
         }
